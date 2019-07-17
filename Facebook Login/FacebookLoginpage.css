@@ -1,0 +1,240 @@
+body{
+  margin:0;
+  font-weight:400;
+ /* font-family:helvetica,Arial,sans-serif; */
+
+    background: linear-gradient(white, #D3D8E8);
+    background-image: linear-gradient(white, rgb(211, 216, 232));
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+.input .login-section #password{
+  margin-right:-0.2rem;
+  margin-top:-1.9rem;
+  color:white;
+ 
+}
+.input .login-section #phone{
+ 
+  margin-top:-0.3rem;
+  margin-left:-21rem;
+  color:white;
+}
+.input .login-section #account{
+    color:#9cb4d8;
+	font-size:15px;
+	margin-top:0.5rem;
+	margin-bottom:6rem;
+	margin-right:-4rem;
+	background-color:
+}
+
+.heading{
+  width:100%;
+  height:85px;
+  background-color:#0d3d89;
+ 
+} 
+.input .login-section .textfield1{
+  
+   width:120px;
+   height:18px;
+   margin-top:-0.5rem;
+   margin-bottom:-1rem;
+   margin-right:19.2rem;
+   
+}  
+.input .login-section .textfield2{
+   
+   width:120px;
+   height:18px;
+   margin-right:-4.5rem;
+   margin-top:-1.25rem;
+   margin-bottom:-1rem;
+   margin-left:11.5rem;
+  
+}
+ .input .login-section .submit{
+	
+    margin-right:-22rem;
+	margin-top:-1.2rem;
+	margin-left:1rem;
+	
+}
+.input .login-section button{
+  background-color:#0d3d89;
+  color:#fff;
+}
+.heading .logo-section{
+	margin-top:3rem;
+}
+.heading  .Logo-section{
+  
+  margin-left:1rem;
+  color:white;
+  height:48px;
+  font-size:45px;
+  text-decoration:none;
+  line-height:48px;
+  min-width:160px;
+  text-align:center;
+}
+.input{
+  float:right;
+}
+.input .login-section{
+ 
+  display:inline-block;
+  text-align:center;
+  padding:0px 5px 20px 50px;
+
+}
+.middle-section .image #h3{
+   color:#0e385f;
+   margin-left:2rem;
+   font-size:19.5px;
+}
+::placeholder{
+  font-size:17.5px;
+
+}
+.account-section .firstName{
+  width:200px;
+  height:30px;
+}
+.account-section .Surname{
+  width:200px;
+  height:30px;
+  margin-left:1rem;
+}
+.account-section .mbnumber{
+  width:426px;
+  height:30px;
+  margin-top:1rem;
+  
+}
+.account-section .password{
+  width:426px;
+  height:30px;
+  margin-top:1rem;
+  
+}
+.account-section .date{
+   width:180px;
+   height:25px;
+}
+.account-section #p1{
+	 font-size:11.5px;
+	 float:right;
+	 margin-right:4rem;
+	 margin-bottom:2rem;
+}
+
+.account-section .radiobuttons{
+   margin-top:1rem;
+   font-size:20px;
+   
+}
+.account-section .anchor{
+   color:#0e385f;
+}
+.account-section #para{
+   font-size:11.5px;
+   float:right;
+   margin-right:7.5rem;
+   margin-top:-0.05rem;
+   width:120px;
+   color:#365899;
+}
+.account-section  #p2{
+  width:300px;
+ font-size:11.5px;
+ line-height:15px;
+ 
+}
+.account-section  #p2 a{
+ font-size:11.5px;
+ text-decoration:none;
+ 
+ 
+}
+.middel-section .image{
+	 width:49%;
+	 
+}
+.middle-section .image img{
+  margin-left:2rem;
+}
+.middle-section .account-section{
+  float:right;
+  width:45%;  
+  margin-top:-18.5rem;
+ 
+}
+.middle-section .account-section #h1{
+   font-size:35px;
+}
+.account-section .signup{
+    display:block;	
+	text-decoration:none;
+	 width:185px;
+	 font-size:20px;
+	
+	 height:42px;
+	 line-height:42px;
+	 text-align:center;
+	 color:#fff;
+	  background-color: #69a74e;
+}
+
+.account-section #downpara{
+  font-size:14px;
+
+}
+.account-section #downpara a{
+  text-decoration:none;
+  color:#365899;
+}
+.footer-section{
+  float:left;
+  background-color:#fff;
+}
+.footer-section ul li{
+   overflow:hidden;
+    padding:1px 20px;
+    display:inline-block;
+}
+.footer-section ul li a{
+  text-decoration:none;
+  margin-left:-1.33rem;
+  font-size:13px;
+  color:#365899;
+
+}
+.footer-section .lang #p1{
+  font-size:13px;
+  margin-left:orem;
+  margin-top:1rem;
+  margin-bottom:-2.2rem;
+}
+.footer-section .lang a{
+  text-decoration:none;
+  margin-left:1rem;
+  display:inline-block;
+  margin-top:-1.5rem;
+  
+}
+.footer-section .lang ul li .link {
+  margin-left:-1.2rem;
+}
+.footer-section #copyright{
+   font-size:12px;
+   margin-left:-2rem;
+}
