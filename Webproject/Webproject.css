@@ -1,0 +1,294 @@
+*{
+  margin:0;
+  padding:0;
+}
+#h1{
+ color:white;
+  font-family:"Verdana", cursive, sans-serif;
+}
+#h1:first-letter{
+  color:#1bf70e;
+  font-size:45px;
+  font-family:"Verdana", cursive, sans-serif;
+  
+}
+
+.navbar_header{
+  background-color:#379ca3;  
+  padding:8px 16px;
+  display:flex;
+  justify-content:space-between;
+  border-bottom:0.3rem solid #ea1e0b;
+}
+.navbar__btn{
+  align-self:center;
+  cursor:pointer;
+  border:5px solid #ea1e0b;
+  margin-left:45rem; 
+}
+.bar1,.bar2,.bar3{
+   width:30px;
+   height:5px;
+   margin:0.5rem;
+   background:#ea1e0b;
+   transition:all 2s ease;
+}
+.change .bar1{
+  transform:rotate(-45deg) translate(-10px,10px)
+}
+.change .bar2{
+  opacity:0;
+}
+.change .bar3{
+  transform:rotate(45deg) translate(-7px,-8px)
+}
+
+
+.navbar__links{
+  list-style-type:none;
+  transition:all 2s ease;
+  margin:0;
+  
+  /*   */
+  height:0;
+  overflow:hidden;   
+}
+.navbar__collapse{
+  height:240px;
+}
+.navbar_singlelink{
+   display:block;
+   background:#6baa75;
+   padding:1rem;
+   font-size:1.5rem;
+   text-decoration:none;
+   text-transform:capitalize;
+   transition:all 1s ease;
+   color:black;
+   cursor:pointer;
+}
+.navbar_singlelink:hover{
+  background:#545454;
+  color:white;
+}
+
+.ImageSlider{
+	 width:100%;
+	 height:450px;
+	 position:relative;
+	 cursor:pointer;
+}
+.ImageSlider img{
+	width:100%;
+	height:100%;
+	position:absolute;
+}
+.ImageSlider .btn{
+  position:absolute;
+  width:50px;
+  height:50px;
+  border:none;
+  border-radius:25px;
+  top:200px;
+  background:black;
+  color:white;
+  outline:none;
+  cursor:pointer;
+  font-size:20px;
+}
+.ImageSlider #btn2{
+  position:relative;
+  float:right;
+}
+.ImageSlider #btn1:hover{
+	box-shadow:10px 0px 20px 0px black;
+}
+.ImageSlider #btn2:hover{
+  box-shadow:-10px 0px 20px 0px  black;
+}
+.header .ImageSlider{
+  min-height:calc(100vh - 91.8px);
+  background-Image:url('image/heroimage-1.jpg'); 
+  background-repeat:no-repeat;
+  background-position:center;
+  -webkit-background-size:cover;
+  
+}
+.section {
+   margin-left:auto;
+   margin-right:auto;
+   width:88%;
+   margin-top:6rem;
+}
+.h2{
+  text-align:center;
+  margin-top:1rem;
+}
+.img{
+  width:33%;
+  float:left;
+  margin-top:4rem;
+  margin-left:.5rem;
+  margin-bottom:7rem;
+  
+}
+.img:first-of-type{
+  margin-left:-.5rem;
+}
+#about{
+   margin-bottom:1.5rem;
+}
+.aboutsection .aboutus{
+  text-align:center;
+  padding:8px;
+  line-height:20px;
+
+}
+.heroimage{
+  background-image:url('image/heroimage3.jpg');
+  -webkit-background-size:cover;
+  background-repeat:no-repeat;
+  background-position:repeat;
+  height:100vh;
+   margin-top:4rem;
+}
+
+.heroimage .signup{
+  transform:translate(5rem,20rem);
+}
+.signup #teamwork{
+  margin-bottom:1rem;
+  font-size:30px;
+}
+.signup #join{
+ font-size:20px;
+}
+.signup #btn{
+	background-color:black;
+	color:white;
+	font-size:1.3rem;
+	border:none;
+	padding:7px;
+	outline:none;
+	cursor:pointer;
+	border-radius:4px;
+	margin-left:-0.3rem;
+	
+}
+.signup #btn:hover{
+	background-color:lightblue;
+	
+}
+::placeholder{
+  font-size:1rem;
+}
+.signup input{
+  font-size:1.5rem;
+  border:none;
+  border-radius:4px;
+  outline:none;
+  padding:5px;
+}
+.images{
+margin-top:10rem;
+margin-left:2rem;
+float:left;
+
+}
+.images .container{
+  cursor:pointer;
+}
+#img2{
+   	margin-left:1rem;
+	padding:0px 0px 2px;
+	padding-bottom:8rem;
+	background-color:white;	
+	cursor:pointer;
+	
+}
+#para{
+  transform:translate(2rem,-7rem);
+  width:80%;
+  margin-left:1rem;
+  color:lightblue;
+  cursor:pointer;
+  
+}
+.Followus{
+  margin-top:4rem;
+  color:rgb(0,0,0,.6);
+  cursor:pointer;
+  
+}
+.Followus img{
+	margin-bottom:-.7rem;
+	margin-left:2rem;
+	cursor:pointer;
+}
+footer{
+  background-color:#ddd;
+}
+.footersection{
+ margin-top:3rem;
+ padding:2rem 2rem;
+ color:#616161;
+}
+.clearfix::after{
+    content:"";
+	clear:both;
+	display:table;
+} 
+.footersection .description{
+   float:left;
+   width:32%;
+   line-height:2rem;
+
+}
+.footersection a{
+  text-decoration:none;
+ color:#616161;
+  
+}
+.footersection ul li{
+  overflow:hidden;
+  
+}
+.description{
+    margin-top:3rem;
+}
+.description #company{
+	margin-left:2rem;
+}
+.description #developer{
+  margin-left:.5rem;
+}
+.down-navigations a{
+	text-decoration:none;
+	color:#616161;
+	font-size:14px;
+}
+.down-navigations{
+  background-color:#ddd;
+  width:100%;
+  float:left;
+}
+.down-navigations ul li{
+  float:left;
+  padding:5px 20px;
+  overflow:hidden;
+}
+.down-navigations img{
+	margin-bottom:-.5rem;
+}
+.down-navigations #eng{
+  color:#616161;
+  font-size:13px;	
+  cursor:pointer;
+}
+.copyright{
+  float:right;
+  font-size:13px;
+  color:#616161;
+  margin-right:2rem;
+  margin-top:1rem;
+}

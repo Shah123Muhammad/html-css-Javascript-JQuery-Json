@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Website | Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Webproject.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+  
+ </head>
+ <body>
+    <nav class="navigations">
+	 <div class="navbar_header">
+	  <h1 id="h1">UNIQUE LANGUAGES</h1>
+	  <div class="navbar__btn">
+	   <div class="bar bar1"></div>
+	   <div class="bar bar2"></div>
+	   <div class="bar bar3"></div>
+	  </div>
+	 </div>
+	 <ul class="navbar__links">
+	  <li>
+	   <a href="#" class="navbar_singlelink">
+	    <i class="fas fa-home"></i>Home
+	   </a>
+	  </li>
+	  <li>
+	   <a href="#" class="navbar_singlelink">
+	    <i class="fab fa-html5"></i>HTML5
+	   </a>
+	  </li>
+	  <li>
+	   <a href="#" class="navbar_singlelink">
+	    <i class="fab fa-css3"></i>CSS3
+	   </a>
+	  </li>
+	  <li>
+	   <a href="#" class="navbar_singlelink">
+	    <i class="fab fa-js"></i>JS
+	   </a>
+	  </li>
+	 </ul>
+	</nav>
+	 <header class="header">
+	  <div class="ImageSlider" onmouseover="mouseOver()" onmouseleave="mouseLeave()">
+	   <img class="slides"  src="image/heroimage-1.jpg" > <!--onmouseover="onImage()" onmouseleave="outImage()"> -->
+       <img class="slides"  src="image/heroimage-2.jpg"  >  <!--onmouseover="onImage()" onmouseleave="outImage()">  -->
+       <button class="btn" onclick="plusIndex(-1)"  id="btn1">&#10094;</button>	
+       <button class="btn" onclick="plusIndex(1)" id="btn2">&#10095;</button>	   
+	   <!--<i class="fa  fa-angle-left"   aria-hidden="true"></i>  Font icons of left and right symbol
+       <i class="fa  fa-angle-right"  aria-hidden="true"></i> -->
+	 </div>
+	 </header>
+	 
+	 <section class="section">
+	 <h1 class="h2">HOW WE WORK!!</h1>
+	  <div class="img"> 
+	    <img src="image/image1.jpg" alt="image1">
+		<h2 class="h2">PROGRAMER</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at tortor libero. Nulla sodales 
+		nibh orci, vitae cursus neque malesuada ut. Vivamus et nibh eget mauris egestas finibus. 
+		Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+		Nam id elit a enim accumsan consectetur.</p>
+	  </div>
+	  <div class="img">
+	    <img src="image/image2.jpg" alt="image2">
+		 <h2 class="h2">DISCIPLINE</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at tortor libero. Nulla sodales 
+		nibh orci, vitae cursus neque malesuada ut. Vivamus et nibh eget mauris egestas finibus. 
+		Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+		Nam id elit a enim accumsan consectetur.</p>
+	  </div>
+	  <div class="img">
+	    <img src="image/image3.jpg" alt="image3">
+		<h2 class="h2">DESIGNER</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at tortor libero. Nulla sodales 
+		nibh orci, vitae cursus neque malesuada ut. Vivamus et nibh eget mauris egestas finibus. 
+		Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+		Nam id elit a enim accumsan consectetur.</p>
+	  </div>
+	  </section>
+	  <section class="aboutsection">
+	  <div class="aboutus">
+	   <h2 id="about">ABOUT US</h2>
+	    <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at tortor libero. Nulla sodales 
+		nibh orci, vitae cursus neque malesuada ut. Vivamus et nibh eget mauris egestas finibus. 
+		Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+		Nam id elit a enim accumsan consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at tortor libero. Nulla sodales 
+		nibh orci, vitae cursus neque malesuada ut.
+		<p class="p"> Vivamus et nibh eget mauris egestas finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+		.</p>
+		<p class="p">Nam id elit a enim accumsan consecteturLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at tortor libero. Nulla sodales 
+		nibh orci, vitae cursus neque malesuada ut. Vivamus et nibh eget mauris egestas finibus. 
+		Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+		Nam id elit a enim accumsan consectetur.</p>
+	  </div>
+	   </section>
+	   
+	   <section>
+	  
+	    <div class="heroimage">
+	     <div class="signup">
+	     <h2 id="teamwork">TEAM WORK</h2>
+	   <p id="join">Want to JOIN our company??</p>
+	    <input type="email" placeholder="email address..." />
+		 <button type="submit" id="btn" >SIGN UP</button>
+		 </div>
+	  </div>
+	  <div class="images">
+	  <div class="container"> 
+	   <img name="slide"  width="400" height="200">  <!-- we can also do this by the onclick method   onclick="changeImg()" -->
+	   </div>
+	   </div>
+	  <div  class="images">
+	  <img src="image/buildimage.jpg" alt="image" id="img2" onmouseover="Image()" onmouseleave="ImageFunction()" width="400">
+	  <h2 id="para" onmouseover="Image()" onmouseleave="ImageFunction()">#Work hard till you do'nt reach your Destination.</h2>
+	  </div>
+	  
+	  <div class="Followus">
+	  Follow us 
+	   <img src="image/facebook img.png" alt="facebook">
+	   <img src="image/twitterimg.png" alt="twiter">
+	   <img src="image/linkedin img.png" alt="linkedin">
+	   </div>
+	  </section>
+	  
+	  
+	  <footer class="footersection clearfix">
+	  <div>
+	  <div class="description">
+	    <ul id="company">
+         <h3>Company</h3>
+	 
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About Microsoft</a></li>
+        <li><a href="#">Company news</a></li>
+        <li><a href="#">Privacy at Microsoft</a></li>
+        <li><a href="#">Investors</a></li>
+        <li><a href="#">Diversity and inclusion</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Security</a></li>
+    </ul>
+	</div>
+	  
+	  <div class="description"> 
+	 <ul id="developer">
+	  <h3>Developer</h3> 
+	 
+        <li><a href="#">Visual Studio</a></li>
+        <li><a href="#">Windows Dev center</a></li>
+        <li><a href="#">Developer Network</a></li>
+        <li><a href="#">TechNet</a></li>
+        <li><a href="#">Virtual Academy</a></li>
+        <li><a href="#">developer program</a></li>
+        <li><a href="#">Channel 9</a></li>
+        <li><a href="#">Office Dev Center</a></li>
+	  </ul>
+      </div>
+	  
+	  
+	  <div class="description">
+     <ul>
+	  <h3>Designer</h3>
+	   <li><a href="#">Designing Experience</a></li>
+	   <li><a href="#">Designer </a></li>
+	   <li><a href="#">TechNet</a></li>
+	   <li><a href="#">Virtaul Academey</a></li>
+	   <li><a href="#">Channel 5</a></li>
+	   <li><a href="#">Desiging strategies</a></li>
+	   <li><a href="#">Deiginers thinking</a></li>
+	   <li><a href="#">Pattern Matching</a></li>
+	 </ul>
+	</div>
+	</div>
+	
+	
+	<div class="footersection clearfix">
+	<div class="description">
+	<ul>
+	<h3>Store and Support</h3>
+  
+       <li><a href="#">Account profile</a></li>
+       <li><a href="#">Download center</a></li>
+       <li><a href="#">Sales and support</a></li>
+       <li><a href="#">Returns</a></li>
+       <li><a href="#">Order tracking</a></li>
+       <li><a href="#">Store locations</a></li>
+       <li><a href="#">Support</a></li>
+       <li><a href="#">Buy online,pick up in store</a></li>
+    </ul>
+	
+    </div>
+	
+	<div class="description">
+  <ul>
+     <h3>Education</h3>
+      <li><a href="#">Microsoft in eduction</a></li>
+      <li><a href="#">Office for Students</a></li>
+      <li><a href="#">Office 365 for schools</a></li>
+      <li><a href="#">Deals for students and parents</a></li>
+      <li><a href="#">Microsoft Azure in education</a></li>
+      <li><a href="#">Best enviroment for Students</a></li>
+      <li><a href="#">Guest rooms for student's parents</a></li>
+   </ul>
+   </div>
+   
+  <div class="description">
+   <ul>
+    <h3>Enterprise</h3>
+      <li><a href="#">Microsoft Azure</a></li>
+      <li><a href="#">Enterprise</a></li>
+      <li><a href="#">Data platform</a></li>
+      <li><a href="#">Find a solution provider</a></li>
+      <li><a href="#">Microsoft partner resources</a></li>
+      <li><a href="#">Microsoft AppSource</a></li>
+      <li><a href="#">Manufacturing & resources</a></li>
+      <li><a href="#">Financial services</a></li>
+	</ul> 
+	</div>
+	</div>
+	</footer>
+	
+	
+    <div class="down-navigations"> 
+	 <ul>
+	 <li id="eng"><a=href="#"><img src="image/Worldimg.png"  alt="image"> English(US)</a></li>
+	  <li><a href="#">contact us</a></li>
+	  <li><a href="#">Privacy & Cookies</a></li>
+	  <li><a href="#">Terms of use</a></li>
+	  <li><a href="#">Trademark</a></li>
+	  <li><a href="#">About us</a></li>
+	 </ul>
+	  <p class="copyright"> &copy; copyright Shah Muhammad 2018</p>
+	</div>
+	  
+	<script src="Webproject.js"></script>
+ </body>
+</html>
