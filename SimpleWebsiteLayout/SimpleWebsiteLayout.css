@@ -1,0 +1,49 @@
+*
+{
+ margin: 0;
+ border: 0;
+ font-family:'Open Sans',san-serif;
+}
+body
+{
+background:#eeeeee;
+}
+ .tm-container
+{
+ max-width: 1200%;
+ margin: 0 auto;
+}
+.tm-header
+{
+ background:#fff;
+}
+.tm-header::after
+{
+  content:" ";
+  clear:both;
+  display:block;
+  visibility:none;
+}
+.tm-logo
+{
+ float:left;
+}
+.tm-nav
+{
+  float:right:
+}
+.tm-nav ul li
+{
+  display: inline-block;
+}
+.tm-nav ul li a
+{
+  padding: 10px 30px;
+  text-decoration:none;
+  color:#303030;
+  line-height:60px;
+}
+.tm-nav ul li a:hover
+{
+ color:#3e99ff;
+}
