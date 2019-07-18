@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<title>Scientific Calculator</title>
+ 	<meta charset="UTF-8">
+ 	<link rel="stylesheet" type="text/css" href="ScientificCalculator.css">
+ </head>
+ <body>
+ 	<div class="container">
+ 		<form name="calcform">
+ 		<h2>The Scientific Calculator</h2>
+ 		<input type="text" id="input_val" name="input_value" style="text-align:right;"><br>
+ 		<input type="button" name="btn1" value="exp" class="btns" onclick="input_value.value=Math.exp(input_value.value)">
+ 		<input type="button" name="btn2" value="7"  class="btns" onclick="displaynum(btn2.value)">
+ 		<input type="button" name="btn3" value="8" class="btns" onclick="displaynum(btn3.value)">
+ 		<input type="button" name="btn4" value="9" class="btns" onclick="displaynum(btn4.value)">
+ 		<input type="button" name="btn5" value="/" class="btns" onclick="displaynum(btn5.value)">
+ 		<br>
+ 		<input type="button" name="btn6" value="ln" class="btns" onclick="input_value.value=Math.log(input_value.value)">
+ 		<input type="button" name="btn7" value="4" class="btns" onclick="displaynum(btn7.value)">
+ 		<input type="button" name="btn8" value="5" class="btns" onclick="displaynum(btn8.value)">
+ 		<input type="button" name="btn9" value="6" class="btns" onclick="displaynum(btn9.value)">
+ 		<input type="button" name="btn10" value="*" class="btns" onclick="displaynum(btn10.value)">
+ 		<br>
+ 		<input type="button" name="btn11" value="sqrt" class="btns" onclick="input_value.value=Math.sqrt(input_value.value)">
+ 		<input type="button" name="btn12" value="1" class="btns" onclick="displaynum(btn12.value)">
+ 		<input type="button" name="btn13" value="2" class="btns" onclick="displaynum(btn13.value)">
+ 		<input type="button" name="btn14" value="3" class="btns" onclick="displaynum(btn14.value)">
+ 		<input type="button" name="btn15" value="-" class="btns" onclick="displaynum(btn15.value)">
+ 		<br>
+ 	   <input type="button" name="btn16" value="sq" class="btns" onclick="input_value.value=eval(input_value.value)*eval(input_value.value)">
+ 		<input type="button" name="btn17" value="0" class="btns" onclick="displaynum(btn17.value)">
+ 		<input type="button" name="btn18" value="." class="btns" onclick="displaynum(btn18.value)">
+ 		<input type="button" name="btn19" value="+/-" class="btns" onclick="changeSign(btn19.value)">
+ 		<input type="button" name="btn20" value="+" class="btns" onclick="displaynum(btn20.value)">
+ 		<br>
+ 		<input type="button" name="btn21" value="(" class="btns" onclick="displaynum(btn21.value)">
+ 		<input type="button" name="btn22" value="cos" class="btns" onclick="input_value.value=Math.cos(input_value.value)">
+        <input type="button" name="btn23" value="sin" class="btns" onclick="input_value.value=Math.sin(input_value.value)">
+        <input type="button" name="btn24" value="tan" class="btns" onclick="input_value.value=Math.tan(input_value.value)">
+        <input type="button" name="btn25" value=")" class="btns" onclick="displaynum(btn25.value)">
+        <br>
+        <input type="button" name="btn26" value="clear" class="last_btns" onclick='input_value.value="0"'>
+        <input type="button" name="btn27" value="backspace" class="last_btns" onclick="deleteChar(btn27.value)">
+        <input type="button" name="btn28" value="enter" class="last_btns" onclick="input_value.value=eval(input_value.value);">
+        </form>
+ 	</div>
+ 	<script src="ScientificCalculator.js"></script>
+ </body>
+</html>
