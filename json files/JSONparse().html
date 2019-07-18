@@ -1,0 +1,423 @@
+<DOCTYPE html>
+<html>
+ <body>
+
+ 
+ <!------------------CONVERTING A STRING INTO JAVASCRIPT OBJECT----------------> 
+ <!--
+  <h2>Convert a string written in JSON format, into a JavaScript object</h2>
+  <p id="demo"></p>
+  <script>
+   var myJSON='{"name":"Shah Muhammad","age":"19","city":"Hyderabad"}';
+   var myObj=JSON.parse(myJSON);
+   document.getElementById("demo").innerHTML=myObj.name;
+  </script>
+  -->
+
+
+  
+  <!----------------------CONVERTING A JAVASCRIPT OBJECT INTO JSON--------------------------->
+  <!--<h2>Convert a JavaScript object into a JSON string, and send it to the server.</h2>
+  <script>
+    var myObj={name:"Shah Muhammad",age:19, city:"Hyderabad"};
+	var myJSON=JSON.stringify(myObj);
+	window.location='demo_json.php?x='+myJSON;
+  </script>
+  -->
+
+
+  
+ <!-------------------STORING & RETRIEVING DATA FROM THE LOCAL STORAGE------------------------>
+<!--  <h2>Store and retrieve data from local storage.</h2> 
+   <p id="demo"></p>
+   <script>   
+	 var myObj,myJSON,text,obj;
+	 //Storing Data:
+	 myObj={name:"Shah Muhammad",age:19,city:"Hyderabad"};
+	 myJSON=JSON.stringify(myObj);
+	 localStorage.setItem("testJSON",myJSON);
+	 //Retrieving data:
+	 text=localStorage.getItem("testJSON");
+	 obj=JSON.parse(text);
+	 document.getElementById("demo").innerHTML=obj.name;
+</script>-->
+
+
+
+<!----------------JSON FROM THE SERVER------------------------->
+ <!--  <h2>Use the XMLHttpRequest to get the content of the file</h2>
+   <p>The content is written in JSON format, and can easily be converted into a JavaScript object</p>
+   <p id="demo"></p>
+   <script>
+     var xmlhttp=new XMLHttpRequest();
+    
+	  xmlhttp.onreadystatechange=function(){
+	        if(this.readyState==4 && this.responseText==200){
+			    var myObj=JSON.parse(this.responseText);
+				document.getElementById("demo").innerHTML=myObj.name;
+		}
+	  };
+      xmlhttp.open("GET","jeson_demo.txt",true);
+      xmlhttp.send(); 
+  -->
+  
+
+  
+  <!------------------ARRAY AS JSON---------------------->
+  <!--<h2>Content As Array</h2> 
+  <p>Content written as an JSON array will be converted into a JavaScript array</p> 
+  <p id="demo"></p>
+  <script>
+    var xmlhttp=new XMLHttpRequest();
+	
+	  xmlhttp.onreadystatechange=function(){
+	     if(this.readyState==4 && this.status==200){
+		    var myArr=JSON.parse(thi.responseText);
+			document.getElementById("demo").innerHTML=myArr[0];
+		 }
+	  };
+	  xmlhttp.open("GET","jeson_demo_array.txt",true);
+	  xmlhttp.send();
+  </script>
+   -->
+   
+   
+   <!------------CONVERTING A STRING INTO AN ARRAY--------------->
+   <!--
+   <h2>convert a String into a date object</h2>
+   <p id="demo"></p>
+   <script>    
+	   var text='{"name":"Shah Muhammad","birth":"02-25-1999","city":"Hyderabad"}';
+	  /* var obj=JSON.parse(text);
+	   obj.birth=new Date(obj.birth);*/
+	   
+	   //OR
+	   //using reviver function//
+	   var obj=JSON.parse(text, function(key, value){
+	       if(key=="birth"){
+		      return new Date(value);
+		   }else{
+		      return value;
+		   }
+	   });
+	   
+	   document.getElementById("demo").innerHTML=obj.name+","+obj.birth
+   </script>
+   -->
+
+
+   
+   <!---------------------CONVERTING A STRING INTO A FUNCTION---------------->
+	  <!--<h2>Converting a string into a function</h2>
+	  <p id="demo"></p>
+       <script>
+	     var text='{"name":"Shah Muhammad","age":"function(){ return 19;}","city":"Hyderabad"}';
+		 var obj=JSON.parse(text);
+		 obj.age=eval("("+obj.age+")");
+		 document.getElementById("demo").innerHTML=obj.name+" "+obj.age();
+	   </script>
+    -->
+
+	
+	<!---------------STRINGIFY A JAVASCRIPT OBJECT---------------------------->
+	<!--<p id="demo"></p>
+	<script>
+	var obj={name:"Shah Muhammad",age:19,city:"Hyderabad"};
+	var myJSON=JSON.stringify(obj);
+	document.getElementById("demo").innerHTML=myJSON;
+	</script>
+	-->
+	
+
+	
+	<!-------------------STRINGIFY A JAVASCRIPT ARRAY----------------------->
+	<!--<p id="demo"></p>
+	<script>
+	   var arr=['Shah Muhammad','Asad Ali','Junaid Ali','Saqib Ali'];
+	   var myJSON=JSON.stringify(arr);
+	   document.getElementById("demo").innerHTML=myJSON;
+	</script>-->
+	
+
+	
+	<!-----------------CONVERTING DATE OBJECTS INTO AN ARRAY---------------------->
+	 <!--<h2>JSON.stringify will convert any date objects into strings</h2>
+	 <p id="demo"></p>
+	 
+	 <script>
+	    var obj={name:"John",today:new Date(), city:"Hyderabad"};
+		var myJSON=JSON.stringify(obj);
+		document.getElementById("demo").innerHTML=myJSON;
+	 </script>-->
+	
+	
+	 <!----------------------STRINGIFY FUNCTION---------------------------->
+	  <!-- <h2>JSON.stringify will remove any function from an object</h2>
+  <p id="demo"></p>
+   <script>
+      var obj={name:"Shah Muhammad",age:function(){ return 30;}, city:"Hyderabad"};
+	  var myJSON=JSON.stringify(obj);
+	  document.getElementById("demo").innerHTML=myJSON;
+   </script>   
+   -->
+<!--------------------STRINGIFY FUNCTION-------------------------------->
+
+ <!--        <h2>JSON.stringify will remove any functions from an object.</h2>
+            <p>Convert the functions into strings to keep them in the JSON object.</p>
+             <p id="demo"></p>     
+   <script>
+    var obj={name:"Shah Muhammad",age:function(){return 19;},city:"Hyderabad"};
+	obj.age=obj.age.toString();
+	var myJSON=JSON.stringify(obj);
+	document.getElementById("demo").innerHTML=myJSON;  
+	</script>
+	-->
+	
+	<!-----------------------------ACCESSING A JSON OBJECT---------------------------->
+	<!--<p>Access a JSON object using dot notation</p>
+	<p id="demo"></p>
+	<script>
+	  var myObj,x;
+	  myObj={"name":"Shah Muhammad","age":19,"car":null};
+	  x=myObj.name;//x=myObj["name"];
+	  document.getElementById("demo").innerHTML=x;
+	</script>	
+	-->
+	
+	
+	<!---------------------------LOOPING ALL THE ELEMENTS---------------------------->
+	<!--
+	<p>How to loop through all properties in a JSON object.</p>
+   <p id="demo"></p>	
+   <script>
+      var myObj={"name":"Shah Muhammad","age":19,"car":null};
+	   for(x in myObj){
+           document.getElementById("demo").innerHTML +=x+"<br>";	  
+	  }
+   </script>
+   
+   <p>How to loop through all properties in a JSON object.</p>
+   <p id="demo"></p>	
+   <script>
+      var myObj={"name":"Shah Muhammad","age":19,"car":null};
+	   for(x in myObj){
+           document.getElementById("demo").innerHTML +=myObj[x]+"<br>";	  
+	  }
+   </script>
+   
+-->
+
+<!-----------------------------NESTED JSON OBJECTS---------------------------->
+
+<!--<p>How to access nested JSON objects.</p>
+<p id="demo"></p>
+<script>
+  var myObj={
+     "name":"Shah Muhammad",
+	 "age":19,
+	 "cars":{
+	     "car1":"Ford",
+		 "car2":"BMW",
+		 "car3":"Fiat"
+	 }
+  }
+  
+   document.getElementById("demo").innerHTML+=myObj.cars.car2+"<br>";
+   //OR:
+   document.getElementById("demo").innerHTML+=myObj.cars["car2"];
+     
+</script>   
+   -->
+  
+<!--------------------------------MODIFY OBJECT PROPERTIES------------------------------>
+  
+<!--   <p>How to modify values in JSON object.</p>
+    <p id="demo"></p>
+	<script>
+	   var myObj,i,x="";
+	   myObj={
+	      "name":"John",
+           "age":19,
+           "cars":{
+			   "car1":"Ford",
+			   "car2":"BMW",
+			   "car3":"Fiat"
+		    }		   
+	   };	   	    
+		///myObj.cars.car2="Mercedes";
+	   //OR:
+	      myObj.cars["car2"]="Mercedes";
+	     for(i in myObj.cars){
+		     x+=myObj.cars[i]+"<br>";
+		 }
+		 
+		 document.getElementById("demo").innerHTML=x;
+	</script>	-->
+	
+<!------------------------------DELETING OBJECT PROPERTIES---------------------------------->
+   
+    <!--<p>How to delete properties of a JSON object.</p>
+    <p id="demo"></p>
+
+    <script>
+	     var myObj,i,x="";
+		 
+		 myObj={
+		    "name":"Shah Muhammad",
+			"age":19,
+			"cars":{
+			   "car1":"Ford",
+			   "car2":"BMW",
+			   "car3":"Fiat"
+			}
+		 };
+		 delete myObj.cars.car2;
+		 
+		 for(i in myObj.cars){
+		    x+=myObj.cars[i]+"<br>";  
+		}		 
+		
+		document.getElementById("demo").innerHTML=x;
+     </script>	
+	-->
+	
+	<!------------------------------------ARRAYS IN JSON OBJECTS---------------------------------->
+<!--	
+	<p>Access an array value of a JSON object.</p>
+	<p id="demo"></p>
+	<script>
+	   var myObj,i,x='';
+	   myObj={
+	     "Name":"Shah Muhammad",
+		 "Age":19,
+		 "cars":["Ford","BMW","Fiat"]
+	   };
+	///////////////To modify Array values/////////////////
+	      myObj.cars[1]="Mercedes";
+	//////////////Delete Array values////////////
+         delete myObj.cars[1];	
+	  // x=myObj.cars[0];
+	 //OR: 
+	 //for(i in myObj.cars){
+	   for(i=0;i<myObj.cars.length;i++){
+	        x+=myObj.cars[i]+"<br>";  
+	   }
+	 document.getElementById("demo").innerHTML=x;	   
+	</script>
+	-->
+	
+	
+	<!-----------------------------------NESTED ARRAYS IN JSON OBJECTS-------------------------------->
+	<!--<p>Looping through arrays inside arrays</p>
+	<p id="demo"></p>
+
+    <script>
+	    var myObj,i,j,x="";
+		myObj={
+		   "Name":"Shah Muhammad",
+		   "age":19,
+		   "cars":[
+		         {"name":"Ford","models":["Fiesta","Focus","Mastang"]},
+				 {"name":"BMW","models":["320", "X3", "X5"]},
+                  {"name":"Fiat", "models":["500", "Panda"] }
+			 ]
+		}
+		
+		for(i in myObj.cars){
+		   x+="<h2>"+myObj.cars[i].name+"</h2>";
+              for(j in myObj.cars[i].models){
+                  x+=myObj.cars[i].models[j]+"<br>";    
+			  }			  
+		}		
+		document.getElementById("demo").innerHTML=x;
+	 </script>	-->
+	 
+	 
+	 
+	 <!-----------------------JSON PHP----------------------->
+         <!---------OBJECTS IN PHP CAN BE CONVERTED INTO JSON BY USING json_encode() ------------>
+<!--	/* 
+	 $myObj->name="Shah Muhammad";
+	 $myObj->age=19;
+	 $myObj->city="Hyderabad";
+	 
+	 $myJSON=json_encode($myObj);
+	  echo $myJSON;
+	 ?> 
+	 */-->
+	 
+<!-------------------------CLIENT JAVASCRIPT--------------------->
+	
+   <!-- <h2>Get Data as JSON from a PHP file on the server</h2>
+        <p id="demo"></p>	
+  <script>
+      var xmlhttp=new XMLHttpRequest();
+       
+	      xmlhttp.onreadystatechange = function(){
+		       if(this.readyState==4 && this.status==200){
+			      myObj=JSON.parse(this.responseText);
+				  document.getElementById("demo").innerHTML=myObj.name;
+			   }
+		  };
+		xmlhttp.open("GET","demo_file.php",true);
+        xmlhttp.send();		
+  </script>-->
+  
+  <!----------------------PHP ARRAY---------------------->
+  <!-----ARRAYS AND OBJECTS IN PHP CAN BE CONVERTED INTO JSON BY USING THE PHP FUNCTION json_encode() ----------------->
+        
+    <!--/*    
+	$myArr=array("Shah Muhammad","Rashid Ali","Basit Ali","Ghulam Muhammad");	 
+	 $myJSON=json_encode($myArr);
+	 echo $myJSON;
+  ?>			
+-->
+
+  <script>
+   /* var data={
+	   "Name":"Shah Muhammad",
+	   "Age":"19",
+	   "City":"Hyderabad"
+	};
+	
+	  for(key in data){
+	     document.write(data[key]+" ");
+	  }*/
+	  
+	  
+	  var data={
+	       "colors":["orange","red","yellow","green"],
+		   "records":[
+		          {"name":"Shah Muhammad","City":"Hyderabad"},
+				  {"name":"Rashid Ali","City":"Islamabad"},
+				  {"name":"Sunil","city":"kanpur"}
+		   ]
+	  };
+	  var data2='{"name":"Shah Muhammad","city":"Hyderabad","rollnumber":"F16SW36"}';
+	  var json_object=JSON.parse(data2);
+	    document.write(json_object.name);
+	     /*  for(index in data.colors){
+		       document.write(data.colors[index]+" ");
+		   }*/
+		   //OR:
+	      /* for(index=0; index<data.colors.length;index++){
+		      document.write(data.colors[index]+"<br>");
+		   }
+		   */
+		   //OR:
+		    /*for(key in data.records){
+			    for(inner_key in data.records[key]){				
+			    document.write(data.records[key][inner_key]+"<br>");
+			}		  
+         }	*/
+      //document.write(data.records[1]["name"]);  
+	
+	
+	//	document.write(JSON.stringify(data));
+	  	   /*function sendJSON(){    
+		     window.location='handleJSON.php?x='+JSON.stringify(data);	     
+	   }*/
+  </script>
+    <!-- <button onclick="sendJSON()">Send JSON data</button>	-->	
+ </body>
+</html>

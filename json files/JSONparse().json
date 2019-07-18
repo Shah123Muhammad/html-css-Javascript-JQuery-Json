@@ -1,0 +1,74 @@
+<DOCTYPE html>
+<html>
+ <body>
+ <!--
+  <h2>Convert a string written in JSON format, into a JavaScript object</h2>
+  <p id="demo"></p>
+  <script>
+   var myJSON='{"name":"Shah Muhammad","age":"19","city":"Hyderabad"}';
+   var myObj=JSON.parse(myJSON);
+   document.getElementById("demo").innerHTML=myObj.name;
+  </script>
+  -->
+  
+  <!--<h2>Convert a JavaScript object into a JSON string, and send it to the server.</h2>
+  <script>
+    var myObj={name:"Shah Muhammad",age:19, city:"Hyderabad"};
+	var myJSON=JSON.stringify(myObj);
+	window.location='demo_json.php?x='+myJSON;
+  </script>
+  -->
+ 
+ 
+<!--  <h2>Store and retrieve data from local storage.</h2> 
+   <p id="demo"></p>
+   <script>   
+	 var myObj,myJSON,text,obj;
+	 //Storing Data:
+	 myObj={name:"Shah Muhammad",age:19,city:"Hyderabad"};
+	 myJSON=JSON.stringify(myObj);
+	 localStorage.setItem("testJSON",myJSON);
+	 //Retrieving data:
+	 text=localStorage.getItem("testJSON");
+	 obj=JSON.parse(text);
+	 document.getElementById("demo").innerHTML=obj.name;
+</script>-->
+
+
+<!----------------JSON FROM THE SERVER------------------------->
+ <!--  <h2>Use the XMLHttpRequest to get the content of the file</h2>
+   <p>The content is written in JSON format, and can easily be converted into a JavaScript object</p>
+   <p id="demo"></p>
+   <script>
+     var xmlhttp=new XMLHttpRequest();
+    
+	  xmlhttp.onreadystatechange=function(){
+	        if(this.readyState==4 && this.responseText==200){
+			    var myObj=JSON.parse(this.responseText);
+				document.getElementById("demo").innerHTML=myObj.name;
+		}
+	  };
+      xmlhttp.open("GET","jeson_demo.txt",true);
+      xmlhttp.send(); 
+  -->
+  <!------------------ARRAY AS JSON---------------------->
+  <h2>Content As Array</h2> 
+  <p>Content written as an JSON array will be converted into a JavaScript array</p>
+  
+  <p id="demo"></p>
+  <script>
+    var xmlhttp=new XMLHttpRequest();
+	
+	  xmlhttp.onreadystatechange=function(){
+	     if(this.readyState==4 && this.status==200){
+		    var myArr=JSON.parse(thi.responseText);
+			document.getElementById("demo").innerHTML=myArr[0];
+		 }
+	  };
+	  xmlhttp.open("GET","jeson_demo_array.txt",true);
+	  xmlhttp.send();
+  </script>
+   
+  
+ </body>
+</html>
