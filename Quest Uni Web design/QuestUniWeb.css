@@ -1,0 +1,382 @@
+
+body{
+   font-family: "Trebuchet MS";
+}
+#img{
+  margin-left:10rem;
+}
+#header{
+	font-size:18px;
+	margin-left:20rem;
+	margin-top:-6.7rem;
+	text-align:justify;
+	color:#27638C;	
+}
+
+#header span b{
+  font-size:27px;
+  
+}
+#header span #head{
+  text-align:justify;
+}
+.sidenav ul li{
+  list-style-type:none;
+  float:left;
+  padding:8px 8px;
+  margin-top:1rem;
+  transform:translate(48rem,-5rem);
+}
+.sidenav ul li a{
+  text-decoration:none;
+  font-size:14px;
+  color:#27638C;
+}
+.sidenav li a:hover{
+  color:lightblue;
+}
+
+.nav {
+  margin-top:5rem;
+}
+
+.nav #hr1{
+  border:1px solid blue;
+}
+.nav #hr2{
+  margin-top:3.2rem;
+ border:1px solid blue;	
+}
+.nav ul{
+  list-style:none;
+}
+.nav ul li{
+   padding:8px 10px;	
+  height:50px;
+  margin-top:-2rem;
+  line-height:60px;
+  float:left;
+  font-size:16px;
+  position: relative;
+  z-index:1000;
+  transform:translate(2rem,0rem);
+}
+.nav ul li:hover{
+	color:blue;
+	cursor:pointer;
+	
+}
+
+.nav ul ul{
+	margin:0;
+	padding:0;
+  display:none;	
+ 
+   
+}
+.nav ul li:hover > ul{
+   width:300px;
+   background-color:lightblue;
+  display:block;
+  
+  font-size:11px;
+  padding-top:10px;
+  position:absolute;
+  z-index:1000;
+}
+/*.nav ul li ul li:hover{
+
+}*/
+
+.slideshow_container{
+	max-width:1000px;
+	position:relative;
+ /* height:75vh;
+  background-image:url('Images/img-1.jpg');
+  background-repeat:no-repeat;*/
+  margin-left:10rem;
+  margin-top:10rem;
+  margin-bottom:6rem;
+}
+.slideshow_container img{
+   border-radius:10px;
+   box-sizing:border-box;
+   border:none;
+   margin-top:-8.5rem;
+   margin-bottom:3rem;
+   box-shadow:0px 1px 6px  rgb(0,0,0,.6);
+}
+.text{	
+  display:block;
+  padding:8px 12px;
+  color:#fff;
+  border:1.5px solid #fff;
+  background-color:black;
+  border-radius:10px;
+  font-weight:bold;
+  position:relative;
+  text-align:center;
+  font-size:16px;
+  width:500px;
+  margin-left:12rem;
+  margin-top:-6rem;
+  margin-bottom:10rem;  
+  opacity:0.3;
+  visibility:visible;
+  width:440px;
+}
+.dot{
+  height:15px;
+  width:15px;
+  background-color:#EEE;
+  border:1px solid #AAA;
+  color:#AAA;
+  display:inline-block;
+  border-radius:50px;
+  transition:background-color 0.6s ease;
+  transform:translate(-5rem,-9rem);  
+}
+.active{
+  border-color:#3E66C6;
+  background:#259FDC;
+  color:#fff;
+  
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.section .pair1{
+  width:92%;
+  margin-top:-8rem;
+  text-align:justify;
+  
+  
+}
+.pair1 .news_updates h4{
+  border-top:2px solid #2A3FAA;
+  border-bottom:2px solid #2A3FAA;
+  background-color:#D4BFFF;
+  height:25px;
+  line-height:25px;
+  
+}
+.pair1 .news_updates{
+  width:45%;
+  margin-left:2rem;
+  line-height:16px;
+}
+.pair1 .news_updates a{
+  color:#27638C;
+
+}
+.pair1 .news_updates a:hover{
+  color:lightblue;
+}
+.pair1 .news_updates #addmission_news{
+  color:white;
+  font-size:12px;
+  color:white;
+  background-color:#000;
+  border-radius:8px;
+}
+
+.pair1 .vc_message{
+  width:45%;
+  margin-right:2rem;
+  float:right;
+  margin-top:-46rem;
+   line-height:16px;
+  
+}
+.pair1 .vc_message a{
+  color:#27638C;
+}
+.pair1 .vc_message a:hover{
+  color:lightblue;
+}
+.pair1 .vc_message h4{
+  border-top:2px solid #2A1FFF;
+  border-bottom:2px solid #2A1FFF;
+  background-color:#7FBFFF;
+  height:25px;
+  line-height:25px;
+}
+.vc_message p{
+  font-size:13px;
+}
+.vc_message img{
+  float:right;
+  margin-right:-9rem;
+  margin-top:-5.5rem;
+  height:150px;
+  width:140px;
+}
+.section a{
+  text-decoration:none;
+  font-size:13px;
+}
+.section .pair2{
+  width:92%;	
+  text-align:justify;
+  
+}
+.pair2 .research_studies{
+   width:45%;
+   margin-left:2rem;
+    line-height:16px;
+}
+.pair2 .research_studies a{
+   color:#27638C;
+}
+.pair2 .research_studies a:hover{
+  color:lightblue;
+}
+.pair2 .research_studies h4{
+     border-top:2px solid #7F0000;
+  border-bottom:2px solid #7F0000;
+  background-color:#FFDFAA;
+  height:25px;
+  line-height:25px;
+}
+.pair2 .Exam_results{
+   width:45%;
+   margin-right:2rem;
+   float:right;
+   margin-top:-27.5rem;
+    line-height:16px;
+}
+.pair2 .Exam_results a{
+  color:#27638C;
+}
+.pair2 .Exam_results a:hover{
+  color:lightblue;
+}
+.pair2 .Exam_results h4{
+     border-top:2px solid #66FFFF;
+  border-bottom:2px solid #66FFFF;
+  background-color:#CCFFFF;
+  height:25px;
+  line-height:25px;
+}
+.pair2 .Exam_results #arch_results{
+  color:white;
+  font-size:12px;
+  color:white;
+  background-color:#000;
+  border-radius:8px;
+}
+.section .pair3{
+  width:96%;
+  text-align:justify;
+ 
+}
+.pair3 .t_notice{
+  width:45%;
+  margin-left:2rem;
+   line-height:16px;
+}
+.pair3 .t_notice a{
+  color:#27638C;
+}
+.pair3 .t_notice a:hover{
+  color:lightblue;
+}
+.pair3 .t_notice h4{
+   border-top:2px solid #00BFAA;
+  border-bottom:2px solid #00BFAA;
+  background-color:#C0DCC0;
+  height:25px;
+  line-height:25px;
+}
+.pair3 .t_notice #arch_tenders{
+   color:white;
+  font-size:12px;
+  color:white;
+  background-color:#000;
+  border-radius:8px;
+}
+.pair3 .library{
+  width:22%;
+  margin-top:-11.8rem;
+  margin-left:40rem;  
+}
+.pair3 .library a{
+  color:#27638C;
+}
+.pair3 .library a:hover{
+  color:lightblue;
+}
+.pair3 .library h4{
+   border-top:2px solid #AA7FFF;
+  border-bottom:2px solid #AA7FFF;
+  background-color:#CCCCFF;
+  height:25px;
+  line-height:25px;
+}
+.pair3 .Access_links{
+   width:22%;
+   margin-right:2rem;
+   float:right;
+   margin-top:-27rem;
+   line-height:10px;
+}
+.pair3 .Access_links a{
+  color:#27638C;
+  
+}
+.pair3 .Access_links a:hover{
+  color:lightblue;
+}
+.pair3 .Access_links h4{
+   border-top:2px solid #003300;
+  border-bottom:2px solid #003300;
+  background-color:#55DFFF;
+  height:25px;
+  line-height:25px;
+}
+#fbimage{
+  margin-left:31rem;
+  margin-top:4rem;
+  color:#27638C;
+  font-size:14px;
+  font-weight:bold;
+}
+#fbimage img{
+  margin-top:-3rem;
+  margin-left:7rem;
+}
+#fbimage p{
+  margin-bottom:-.3rem;
+}
+.footer .footerpara{
+  border-top:4px solid rgb(127,159,255);
+  background-color:lightblue;
+  height:18vh;	
+  margin:0;
+}
+.footerpara #address{
+  font-size:13px;
+  margin-left:2rem;
+}
+.footerpara #copy{
+   text-align:center;
+   font-size:13px;
+}
