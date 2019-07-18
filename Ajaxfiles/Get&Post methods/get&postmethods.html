@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			/////////////////USING GET///////////////////
+			
+		/*	$("button").click(function(){
+				//inside get we have two parameters
+               $.get("test.txt",function(data,status){
+                     $("#test").html(data);
+                     alert(status);
+               });
+			});*/
+
+			///////////////////USING POST/////////////////
+            
+             $("input").keyup(function(){
+                    var name=$("input").val();
+                    //inside post we have three parameters 1.path 2.data that we pass on suggestions.php  3.callback function
+                    $.post("suggestions.php",{
+                    	suggestion:name	
+                    }, function(data,status){
+                    	$("#test").html(data);
+                    });
+             });
+		});
+	</script>
+</head>
+<body>
+
+ <!--<button>Click me to get data!</button>-->
+ <input type="text" name="name">
+  <p id="test"></p>
+
+</body>
+</html>

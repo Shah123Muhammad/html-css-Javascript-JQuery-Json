@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajax using Jquery</title>
+	<script src="jquery.js"></script>
+</head>
+<body>
+
+  <script type="text/javascript">
+ //////////////////USING JQUERY GET METHOD////////////////////
+ /* 	
+  	 function sendajax(){
+  	 	$.get("Example.php",function(data,success){
+          $("#response").html(data);    
+  	 	});
+  	 }
+*/
+
+
+////////////////////USING JQUERY POST METHOD///////////////////
+   /*   function sendajax(){
+        $.post("Example.php",{name:"Shah Muhammad",email:"balochsm99@gmail.com"},function(data,success){
+                 
+                 $("#response").text(data);//U can use html() here as well,
+        });
+      }
+*/
+      /////////////////////USING JQUERY AJAX METHOD////////////////
+
+      function sendajax(){
+          
+          $.ajax({
+            url:'Example.php',
+            type:'POST',
+            data:"name=Shah Muhammad&email=balochsm99@gmail.com",
+            success:function(response){
+                  $("#response").html(response);//You can use text() method here too!
+
+            }
+          });
+
+      } 
+
+  </script>
+
+  <div id="response"></div>
+  <input type="button" onclick="sendajax()"  value="Send Ajax Request"/>
+
+</body>
+</html>

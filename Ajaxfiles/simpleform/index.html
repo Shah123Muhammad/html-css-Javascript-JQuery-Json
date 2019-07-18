@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajax</title>
+	<script src="jquery.js"></script>
+
+	<style>
+		#box{
+         width:500px;
+		 background-color:#ccc;
+		 margin:0 auto;
+		 text-align: center;
+         padding: 10px;
+
+	}
+	</style>
+
+  <script>
+  	 $(document).ready(function(){
+         $("#submit").click(function(){
+         	////////////AJAX STARTS////////////// 	
+           var user_name=$("#name").val();
+           var user_email=$("#email").val();
+           var user_pass=$("#pass").val();
+             /*$.post("Example.php",{name:user_name, email:user_email, pass:user_pass},function(data){ //$.get-------
+                $("#result").html(data);
+             });*/
+
+             $.ajax({
+             	url:'Example.php',
+             	data:{name:user_name,email:user_email,pass:user_pass},
+             	type:'post',
+             	success:function(data){
+             		$("#result").html(data);
+             	}
+             });
+         });     
+  	 });
+  </script>
+
+</head>
+<body>
+  
+   	<div id="box">
+       <h2>New Users Register Here!!</h2>
+   		<input type="text" name="name" id="name" placeholder="Name" /><br>
+   		<input type="text" name="email" id="email" placeholder="Email"/><br>
+   		<input type="password" name="pass" id="pass" placeholder="Password" /><br>
+   		<input type="submit" name="submit" id="submit" value="Submit">
+
+    <div id="result"></div>
+   	</div>
+ 
+
+</body>
+</html>

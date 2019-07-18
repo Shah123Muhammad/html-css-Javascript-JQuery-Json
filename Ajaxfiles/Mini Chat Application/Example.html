@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat Application</title>
+	<script src="jquery.js"></script>
+
+   <style>
+    
+     body{
+          
+          margin:0;
+          padding:0;
+          background-color: #ccc;        
+     }
+      #wrapper{
+      	  width:700px;
+      	  margin: 0px auto;
+      	  min-height: 500px;
+      	  background-color: #fff;
+      	  padding-top: 50px;
+      }
+      #messages{
+      	width:600px;
+      	margin:0px auto;
+      	border:1px solid #eee;
+      	min-height: 400px;
+      }
+      #input-wrapper{
+           width: 600px;
+           margin:0px auto;
+      }
+      #enterchat{
+      	margin-top: 1rem;
+      	 width:530px;
+      	 height: 20px;
+         padding:5px; 
+      }
+      #sendbtn{
+      	width: 52px;
+      	height:30px;
+      	font-family: tahoma;
+      	font-weight:bold;
+      	background-color: #333;
+      	color:#fff;
+      	border:1px solid #000;
+
+      }
+  </style>
+</head>
+<body>
+  
+  <script type="text/javascript">
+
+    setInterval(function(){
+         
+         updateChat();
+
+    },500);
+
+      function updateChat(){
+       $.ajax({
+                
+                url:"Example.php",
+                type:"POST",
+                data:"chatUpdate=chat",
+                success:function(response){
+                      $("#messages").html(response);
+                }
+           });
+      }
+
+    function sendajax(){
+           
+           var chatText=$("#enterchat").val();
+           $("#enterchat").val("");
+
+           $.ajax({
+                
+                url:"Example.php",
+                type:"POST",
+                data:"chat="+chatText,
+                success:function(response){
+                      
+                }
+           });
+    }   
+
+  </script>
+ 
+ <div id="wrapper">
+
+    <div id="messages"></div>	
+
+    <div id="input-wrapper">
+    <input id="enterchat" type="text" />
+    <input id="sendbtn" type="button" onclick="sendajax()" value="Send"/>
+  </div>
+ </div>
+</body>
+</html>

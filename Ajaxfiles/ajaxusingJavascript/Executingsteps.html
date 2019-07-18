@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  
+    <script type="text/javascript">
+    
+        function newAjax(){
+        	var ajax;
+             if(window.XMLHttpRequest){
+                   //this is for IE 7+,chrome,safari and Firefox
+                ajax=new XMLHttpRequest();                
+             }else{
+             	//this is for IE 6 and IE 5
+             	ajax=new ActiveXObject("Microsoft.XMLHTTP");
+             }
+             return ajax;
+        }
+
+        function LoadMe(){
+        	var ajaxHandler=newAjax();
+        	ajaxHandler.onreadystatechange=function(){
+        		if(ajaxHandler.readyState==4 && ajaxHandler.status==200){
+        			document.getElementById("loadMe").innerHTML=ajaxHandler.responseText;
+        		}
+        	}
+          ajaxHandler.open("GET","mypage.html",true);//the request
+          ajaxHandler.send();	//sends the request
+        }        	  
+    </script>
+</head>
+<body>
+   <div id="loadMe">&nbsp</div>
+   <button onclick="LoadMe();">Ajax my page</button>
+</body>
+</html>

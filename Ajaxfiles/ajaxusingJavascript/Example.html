@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajax</title>
+</head>
+<body>
+
+<script>
+
+	function sendajax(){
+	var xmlObj=new XMLHttpRequest();
+	 
+	 ///////////////////USING GET//////////////////////
+
+	/*
+	xmlObj.open("GET","Example.php",true);
+	xmlObj.onreadystatechange=function(){
+		if(xmlObj.readyState==4 && xmlObj.status==200){
+			document.getElementById("response").innerHTML=xmlObj.responseText;
+		}
+	}
+	xmlObj.send();	
+}
+	*/
+//////////////////////USING POST/////////////////////
+
+  xmlObj.open("POST","Example.php",true);
+  xmlObj.setRequestHeader("content-type","application/x-www-form-urlencoded");
+
+	xmlObj.onreadystatechange=function(){
+
+     if(xmlObj.status==404){
+     	 document.getElementById("reponse").innerHTML="Oops server not found!!";
+     }
+
+
+		if(xmlObj.readyState==4 && xmlObj.status==200){
+			document.getElementById("response").innerHTML=xmlObj.responseText;
+		}
+	}
+	xmlObj.send("name=Shah Muhammad&email=balochsm99@gmail.com");	
+}
+
+</script>
+	
+	<div id="response"></div>
+	<input type="button" onclick="sendajax()" value="Send Ajax Request"/>
+
+</body>
+</html>

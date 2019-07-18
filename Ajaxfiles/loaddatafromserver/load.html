@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<script src="jquery.js"></script>
+	<script>
+		$(document).ready(function(){
+              $("#btn").Click(function(){
+              	  $("#test").load("data.txt",{ //load function takes three parameteres 1.URL 2.Data and 3.The Callback function
+                    FirstName:"Shah",
+                    LastName:"Muhammad" 
+                  }, function(){
+                    alert("Hi there!!");
+                  });
+              });
+		});
+	</script>
+</head>
+<body>
+    <div id="test">
+    	<p>This is the first content!!</p>
+    </div>
+
+    <button id="btn">Click to change</button>
+
+</body>
+</html>
+

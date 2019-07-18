@@ -1,0 +1,172 @@
+body,h1,h2,h3,p,quote,small,form,input,ul,li,ol,label{
+	/* Page reset */
+	margin:0;
+	padding:0;
+}
+
+body{
+	/* Setting default text color, background and a font stack */
+	color:#444444;
+	font-size:13px;
+	background: #337199;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#box{
+	/* This holds the full view of the quote */
+	background:url(img/mid_part.png) repeat-y;
+	width:574px;
+	margin:10px auto;
+	float:left;
+}
+
+#topPart{
+	/* Positioned inside the #box div, holds the top part of the view */
+	background:url(img/top_part.png) no-repeat;
+	
+	min-height:195px;
+	
+	/* Providing height for browsers that do not support min-height (e.g. IE6) */
+	height:195px;
+	
+	float:left;
+	margin-top:-10px;
+	width:100%;
+	padding-top:20px;
+}
+
+div > #topPart{
+	/* Setting the height to auto for non-IE6 browsers */
+	height:auto;
+}
+
+#botPart{
+	/* Bottom part of the full view */
+	background:url(img/bot_part.png) no-repeat;
+	height:24px;
+	float:left;
+	width:100%;
+	margin-bottom:-10px;
+}
+
+h1.quote{
+	/* This is the text of the quote in the full view. Replaced by Cufon */
+	font-size:45px;
+	color:#616161;
+	text-align:right;
+	padding:15px 40px 0 40px;
+	line-height:60px;
+}
+
+#author{
+	/* The span that holds the name of the author */
+	color:#9C9C9C;
+	float:right;
+	font-size:14px;
+	font-style:italic;
+	font-weight:bold;
+	letter-spacing:1px;
+	margin-right:40px;
+	text-transform:uppercase;
+}
+
+#quotes-list{
+	/* The list on the right */
+	background:#444444 none repeat scroll 0 0;
+	border:1px solid #333333;
+	float:left;
+	margin-left:50px;
+	padding-top:10px;
+	width:230px;
+	height:350px;
+	overflow:hidden;
+}
+
+#quotes-hide{
+	/* Positioned inside #quotes-list, but a 15px smaller */
+	height:335px;
+	overflow:hidden;
+}
+
+.star-rating{
+	margin-top:2px;
+}
+
+.thumb{
+	/* Each quote that is positioned in the list on the right of the page */
+	background:url(img/top_part.png) no-repeat 50% 70%;
+	color:#777777;
+	font-size:16px;
+	font-weight:bold;
+	height:40px;
+	margin:0 10px 15px;
+	overflow:hidden;
+	padding:15px;
+	width:180px;
+	cursor:pointer;
+	text-align:left;
+}
+
+.thumb:hover{
+	background:white;
+}
+
+#quotes-list,.thumb,p.tut{
+	/* Using CSS3 rounded corners */
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+
+.points{
+	/* The points next to the quote title */
+	color:#999999;
+	font-size:12px;
+	font-weight:normal;
+}
+
+/* The styles below are only necessary for the demo page */
+
+h1{
+	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+	font-size:36px;
+	font-weight:normal;
+	margin-bottom:15px;
+}
+
+#main{
+	/* The main container */
+	margin:30px auto;
+	text-align:center;
+	width:920px;
+	height:560px;
+	position:relative;
+	
+	background:url(img/demo_bg_gradient.jpg) no-repeat 50% 50%;
+}
+
+.clear{
+	clear:both;
+}
+
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+p.tut{
+	background-color:#222222;
+	border:1px solid black;
+	clear:both;
+	color:#FCFCFC;
+	font-family:"Myriad Pro",Arial,sans-serif;
+	margin:120px auto 40px;
+	padding:10px;
+	text-align:center;
+	width:550px;
+}
