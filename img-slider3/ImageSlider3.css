@@ -1,0 +1,26 @@
+#slideWindow{
+  position:relative;
+  width:500px;
+  height:250px;
+  margin:0 auto;
+  padding:0;
+  overflow:hidden;
+  border:solid grey;
+ 
+}
+#buttonRight{
+  position:absolute;
+  color:white;
+  font-size:25px;
+  right:12px;
+  top:42%;
+  cursor:pointer;  
+}
+#buttonLeft{
+  position:absolute;
+  color:white;
+  font-size:25px;
+  left:12px;
+  top:42%;
+  cursor:pointer;  
+}
