@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <style>
+     body{
+	   background:silver;
+	   min-height:100vh;
+	   align-items:center;
+	   justify-content:center;
+	   display:flex;
+	 }
+	 table{
+	   background:grey;
+	   width:580px;
+	   margin:0 auto;
+	   line-height:30px;
+	 }
+  </style>
+ </head>
+ <body>
+  
+   <table>
+    <form name="myForm1" onsubmit="myFormFunction(); return false;">
+	 
+	 <tr>
+	  <td width="170">User name</td>
+	  <td><input type="text" name="user"></td>
+	 </tr>
+	 <tr>
+	  <td>password</td>
+	  <td><input type="password" name="pass"></td>
+	 </tr>
+	 <tr>
+	  <td>Cofirm password</td>
+	  <td><input type="password" name="con_pass"></td>
+	 </tr>
+	 <tr>
+	  <td>Email-address</td>
+	  <td><input type="text" name="email"></td>
+	 </tr>
+	 <tr>
+	  <td>Gender</td>
+	  <td>
+	  <input type="radio" name="gender">Male
+	  <input type="radio" name="gender">Female
+	  </td>
+	 </tr>
+	 <tr>
+	  <td>Expertise</td>
+	  <td>
+	  <input type="checkBox" name="python">PYTHON
+	  <input type="checkBox" name="java">JAVA
+	  <input type="checkBox" name="html">HTML
+	  <input type="checkBox" name="css">CSS
+	  <input type="checkBox" name="javascript">JAVASCRIPT
+	  </td>
+	 </tr>
+	 <tr>
+	  <td>Country</td>
+	  <td>
+	   <select name="country">
+	    <option value='none'>SelectCountry</option>
+	    <option value='India'>India</option>
+		<option value='Srilanka'>Srilanka</option>
+		<option value='America'>America</option>
+		<option value='China'>China</option>
+		<option value='Afghanistan'>Afghanistan</option>
+		<option value='Indonesia'>Indonesia</option>
+		<option value='Pakistan'>Pakistan</option>
+	   </select>
+	  </td>
+	 </tr>
+	 <tr>
+	  <td></td>
+	  <td><input type="Submit"></td>
+	 </tr>
+	</form>
+   </table>
+   <div id="get_data">Getting data</div>
+ <script src="FormValidationUsingJavaScript.js"></script> 
+ </body>
+</html>
