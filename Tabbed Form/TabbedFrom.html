@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Tabbed Form</title>
+  <meta charset="UTF-8">
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="TabbedFrom.css">
+ </head>
+ <body>
+  <form name="myform" onsubmit="return validateForm()">
+   <ul>
+    <li class="title">Who are You??</li>
+	<li class="fields">
+	   <label>*First Name:</label> <br>
+	    <input type="text" id="firstName" class="req"/><br>
+	   <label>Middle Name:</label><br>
+	    <input type="text" id="middleName"/><br>
+	   <label>Last Name:</label><br>
+	    <input type="text" id="lastName"/><br>
+	   <label>*Email:</label><br>
+	    <input type="email" id="email" class="req"/>
+	</li>
+	<li class="title">Where are you??</li>
+	<li class="fields">
+	   <label>City:</label><br>
+	   <input id="city" type="text"/><br>
+	   <label>*State:</label><br>
+	   <input id="state" class="req" type="text"/><br>
+	   <label>Country:</label><br>
+	   <input id="country" type="text"/><br>
+	</li>
+	<li class="title">What do you do??</li>
+	<li class="fields">
+	<label>*Occupation:</label><br>
+	<input type="text" id="occupation" class="req"/><br>
+	<label>Company:</label><br>
+	<input type="text" id="company"/><br>
+	<label>Company Location:</label><br>
+	<input type="text" id="company_location"/><br>
+    </li>
+	
+	<button type="submit" id="submit" >Submit Form!!</button>
+   </ul>
+   
+  </form>
+  
+  <script src="TabbedForm.js"></script>
+ </body>
+</html>

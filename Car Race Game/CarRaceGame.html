@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Query Race Game!!</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="CarRaceGame.css">
+  
+ </head>
+ <body id="race">
+  <h1>JQuery Car Racer 2.0</h1>
+  
+  <input type="button" value="Race!" id="go"/>
+  <input type="button" value="Reset" id="reset"/>
+  
+  <div id="racetrack">
+    <img src="img/carimage1.jpg" alt="Green car" id="car1" class="car">
+	<img src="img/carimage1.jpg" alt="Red car" id="car2" class="car">
+  </div>
+  
+  <div id="raceInfoContainer" class="clearfix">
+    <h2>Results</h2>
+	<div id="raceInfo1" class="raceInfo">Car 1<span></span></div>
+	<div id="raceInfo2" class="raceInfo">Car 2<span></span></div>
+  </div>
+   
+   
+   <script src="jquery.js"></script>
+ </body>
+</html>

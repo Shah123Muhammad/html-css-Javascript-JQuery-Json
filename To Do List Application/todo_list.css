@@ -1,0 +1,113 @@
+#container{
+  width:700px;
+  height:450px;
+  margin:70px auto;
+  border:2px solid rgb(125,181,66);
+}
+h2{
+  color:rgb(125,181,66);
+  text-align:center;
+  
+}
+#projects{
+  width:650px;
+  height:250px;
+  margin:0px auto;
+}
+ol li{
+  border:1px dotted black;
+  cursor:pointer;
+  padding:5px;
+  margin-bottom:5px;
+  
+}
+/*ul li a:active{
+   background-color:#06d88b;
+}*/
+#main{
+	 background-color:#6196ed;
+	 height:50px;
+}
+ol li:hover{
+   background:#6eb7d6;
+}
+#maindiv{
+   border:2px solid lightblue;
+}
+#btnAddProject{
+   margin-left:560px;
+   margin-bottom:20px;
+   background:#0f5ee0;
+   color:white;
+   width:100px;
+   height:30px;
+   border:none;
+   cursor:pointer;
+   border-radius:4px;
+   outline:none;
+}
+#btnAddTask{
+   margin-left:550px;
+   margin-top:20px;
+   background:#0f5ee0;
+   color:white;
+   width:100px;
+   height:30px;
+   border:none;
+   cursor:pointer;
+   border-radius:4px;
+   outline:none;
+}
+ul li{
+	cursor:pointer;
+}
+
+#project-dialog{
+  border:2px solid lightblue;
+  background-color:#fff;
+  
+}
+#project-dialog p{
+  background-color:#6196ed;
+  height:30px;
+  margin-top:0;
+  color:white;
+  text-align:center;
+  font-size:20px;
+}
+#projectName ol{
+  background-color:#6196ed;
+}
+#task-dialog{
+  border:2px solid lightblue;
+  background-color:#fff;
+  
+}
+#task-dialog p{
+  background-color:#6196ed;
+  height:30px;
+  margin-top:0;
+  color:white;
+  text-align:center;
+  font-size:20px;
+}
+#taskName ol{
+  background-color:#6196ed;
+}
+ projectName{
+  background-color:red;
+}
+
+.ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; }
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+
+#tabs div {
+    margin: 80px 40px; padding: 25px; background: #ccc;
+}
